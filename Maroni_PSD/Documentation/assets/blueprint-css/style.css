@@ -1,0 +1,89 @@
+html, body {
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+	position: relative;
+	width: 100%;
+	height: 100%;
+ 	background-color: #fff;
+ 	counter-reset: section;
+ 	padding: 0;
+}
+.f-intro {
+	float: left;
+	font-size: 14px;
+	font-style: italic;
+}
+.f-main-title {
+	font-weight: 500;
+}
+.f-structure {
+	display: inline-block;
+	background-color: #f2f4f5;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.f-sign {
+	text-align: right;
+}
+.f-to-top {
+	padding-bottom: 10px;
+	float: right;
+}
+.f-toc {
+    top: 50px;
+    right: 20px;
+    background: #a1af6b;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+}
+.f-toc h2 {
+    color: #fff;
+    font-weight: 600;
+}
+.f-toc ul li {
+	list-style: none;
+}
+.f-toc ul li a {
+	color: #fff;
+	padding-bottom: 10px;
+	display: block;
+	text-decoration: none;
+}
+.f-toc ul li:before {
+	display: none;
+}
+.f-toc ul li a::before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+.f-toc ul li a:hover {
+	color:#252525
+}
+.f-head {
+	width: 100%;
+	height: auto;
+	display: flex;
+	place-items: center;
+}
+.f-head .f-head-left {
+	float: left;
+	width: 40%;
+	border-radius: 5px;
+	background: #F1F0E2;
+	border-right: 1px solid #eee;
+	padding: 15px;
+	margin: 20px 20px 20px 0px;
+}
+.f-head .f-head-left p {
+	margin-bottom: 0;
+}
+.f-head .f-head-right {
+	 width: 60%; 
+}
+li:before {
+	content: '●';
+	color: #0000004a;
+	padding-right: 15px;
+}
